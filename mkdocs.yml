@@ -1,0 +1,25 @@
+site_name: My Docs
+
+repo_name: dongnguyenluongdinh/portfolio
+repo_url: https://github.com/dongnguyenluongdinh/portfolio
+
+site_description: >-
+  Each piece in this portfolio offers a window into my journey—an evolving story of discovery, innovation, and boundless creative expression. 
+  Step in, explore, and let's shape the future together."
+
+theme: 
+  name: material
+  palette:
+    scheme: slate
+  
+
+plugins:
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/dongnguyenluongdinh
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/dongnguyenluongdinh/
