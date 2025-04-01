@@ -1,5 +1,6 @@
-site_name: My Docs
-sit_url: https://dongnguyenluongdinh.github.io/portfolio/
+site_name: Portfolio & Sharing
+site_author: Dong Nguyen Luong Dinh
+site_url: https://dongnguyenluongdinh.github.io/portfolio/
 repo_name: dongnguyenluongdinh/portfolio
 repo_url: https://github.com/dongnguyenluongdinh/portfolio
 
@@ -9,12 +10,44 @@ site_description: >-
 
 theme: 
   name: material
+  features:
+  - navigation.top
+  - navigation.footer
+  - navigation.path
+  - navigation.tabs
+  - navigation.sections
+  - navigation.tracking
+  - navigation.indexes
+  - search.highlight
+  - search.share
+  - search.suggest
+  - content.code.annotate
+  - toc.follow
   palette:
-    scheme: slate
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
   
 nav:
-  - Home: index.md
-  - Portfolio: portfolio.md
+  - Home: 
+    - index.md
+    - Introduction: introduction.md
+    - Projects: 
+      - Overview: projects.md
+      - Building a YOLO-Powered Chatbot: yolo_chatbot.md
+      - Python Environment Setup with Bash: setup_shell.md
+    - Notes: notes.md
 
 plugins:
   - search:
@@ -26,3 +59,30 @@ extra:
       link: https://github.com/dongnguyenluongdinh
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/dongnguyenluongdinh/
+
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
