@@ -1,5 +1,5 @@
 site_name: My Docs
-
+sit_url: https://dongnguyenluongdinh.github.io/portfolio/
 repo_name: dongnguyenluongdinh/portfolio
 repo_url: https://github.com/dongnguyenluongdinh/portfolio
 
@@ -12,6 +12,9 @@ theme:
   palette:
     scheme: slate
   
+nav:
+  - Home: index.md
+  - Portfolio: portfolio.md
 
 plugins:
   - search:
