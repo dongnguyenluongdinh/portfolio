@@ -20,6 +20,10 @@ wsl --install -d Ubuntu
 
 Prerequisites:
 
+- Windows 10 19044 or higher (64-bit).
+
+- NVIDIA® GPU card with CUDA® architectures 3.5, 5.0, 6.0, 7.0, 7.5, 8.0 and higher: [CUDA®-enabled GPU cards](https://developer.nvidia.com/cuda-gpus)
+
 - NVIDIA GPU drivers 525.105 or newer
 
 - WSL2 CUDA support installed
@@ -51,10 +55,10 @@ Prerequisites:
 ``` sh
 uv venv
 source .venv/bin/activate
-uv pip install tensorflow
+uv pip install tensorflow # (1)!
 ```
 
-The latest tensorflow from PyPI on Linux includes GPU support out of the box, but for stability select `tensorflow 2.15`.
+1.  The latest tensorflow from PyPI on Linux includes GPU support out of the box, but for stability select `tensorflow 2.15`.
 
 ### ✅ Test GPU Access
 
