@@ -47,6 +47,8 @@ nav:
       - Overview: projects.md
       - Building a YOLO-Powered Chatbot: yolo_chatbot.md
       - Python Environment Setup with Bash: setup_shell.md
+    - Blog: 
+      - Set up GPU on Windows 11 WSL2: blog_gpu_setup.md
     - Notes: notes.md
 
 plugins:
@@ -86,3 +88,6 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
