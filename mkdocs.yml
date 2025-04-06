@@ -48,7 +48,6 @@ nav:
       - Building a YOLO-Powered Chatbot: yolo_chatbot.md
       - Python Environment Setup with Bash: setup_shell.md
     - Blog: 
-      - blogs.md
       - Set up GPU on Windows 11 WSL2: blog_gpu_setup.md
     - Notes: notes.md
 
